@@ -1,0 +1,39 @@
+body {
+  background-color: #fcf0c8;
+}
+.h2 {
+  font-size: 2vw;
+  line-height: 6vw;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGH6GpTkNkDwx9kKrzH8jGnEAJf9nZXgoKA&usqp=CAU");
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  animation: zoomout 5s ease 500ms forwards;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+.clearfix {
+  background-color: #face7f;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+.clearfix img {
+  width: 30vw;
+  height: 60vh;
+}

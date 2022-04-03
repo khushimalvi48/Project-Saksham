@@ -1,12 +1,19 @@
 import React, {useState, useEffect } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import Header from './components/layout/Header';
 import Home from './components/pages/Home';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import About from './components/pages/About';
 import UserContext from './context/userContext';
 import './App.css';
+import Community from './components/pages/Community/Community';
+import Join from './components/pages/Join/Join';
+import Product from './components/pages/Product';
+import Checkout from './components/pages/Checkout/Checkout';
+import Payment from "./components/Payments/Payment";
+import Donate from './components/Payments/Donate';
 
 function App() {
   const [ userData, setUserData] = useState({
@@ -40,11 +47,20 @@ function App() {
     <BrowserRouter>
       <UserContext.Provider value={{ userData, setUserData }}>
         <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/register" component={Register} />
-          <Route path="/login" component={Login} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/about" element={<About/>}/>
+          <Route path="/register" element={<Register/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/community" element={<Community />} />
+          <Route path='/payment' element={<Payment/>}/>
+          <Route path="/join" element={<Join/>} />
+          <Route exact path='/explore' element={<Product />} />
+          <Route exact path='/donate' element={<Donate />} />
+          
+<Route path='/checkout/:pname/:psname/:price' element={<Checkout/>}/>
+          
+        </Routes>
         </UserContext.Provider>
     </BrowserRouter>
   );

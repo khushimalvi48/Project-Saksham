@@ -1,0 +1,33 @@
+.img{
+    padding-left: 2.5rem;
+}
+.img_sect2 {
+    background-color: rgb(219, 211, 211);
+    border-radius: 3%;  
+    width: 15rem;
+    height: 13rem;
+}
+.memberSect {
+    padding:2rem 10rem;
+     background-color:#FACE7F;
+    border-radius: 0% 35% 0 35%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+   height: 35rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 6rem;
+    color: rgb(10, 10, 10);
+}
+.mainCard{
+     position: relative;
+}
+.name{
+    position: relative;
+    color: rgba(145, 31, 39);
+    left: 5rem;
+}
+.text
+{
+    width: 25rem;
+}

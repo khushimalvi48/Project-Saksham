@@ -1,8 +1,11 @@
 import React, { useState, useContext } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate ,NavLink} from "react-router-dom";
 import axios from "axios";
 import UserContext from "../../context/userContext";
 import ErrorNotice from "../../components/misc/ErrorNotice";
+import mandala from './mandala.png';
+import './Login.css';
+import Footer from '../pages/Footer/Footer';
 
 function Login () {
     const [email, setEmail] = useState();
@@ -10,7 +13,7 @@ function Login () {
     const [error, setError] = useState();
 
     const { setUserData } = useContext(UserContext);
-    const history = useHistory();
+    const history = useNavigate();
 
     const submit = async (e) => {
         e.preventDefault();
@@ -22,7 +25,7 @@ function Login () {
                 user: loginResponse.data.user
             });
             localStorage.setItem("auth-token", loginResponse.data.token);
-            history.push("/");
+            history("/");
         } catch(err) {
             err.response.data.msg && setError(err.response.data.msg)
         }
@@ -30,17 +33,47 @@ function Login () {
     };
     
     return (
+        <>
         <div className="login">
-            <h2>Login</h2>
-            {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
-            <form onSubmit={submit}>
-                <label>Email: </label>
-                <input type="email" id="email" onChange={e => setEmail(e.target.value)}/>
-                <label>Password: </label>
-                <input type="password" id="password" onChange={e => setPassword(e.target.value)}/>
-                <input type="submit" value="Login" className="btn btn-primary" />
-            </form>
-        </div>
+        <img src={mandala} alt="img"/>
+                <div className="left">
+                
+                <h1>Login</h1>
+                 {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
+                <form onSubmit={submit} >
+                    <div className="mb-3">
+                        <label htmlfor="exampleInputEmail1" className="form-label">Email address</label>
+                        <input type="email"
+                            className="form-control"
+                            name="email"
+                            id="email1"
+                            onChange={e => setEmail(e.target.value)}
+                            autoComplete="off"         
+                            placeholder="abc@gmail.com"
+                            aria-describedby="emailHelp" />
+                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div className="mb-3">
+                        <label htmlfor="exampleInputPassword1" className="form-label">Password</label>
+                        <input type="password"
+                            className="form-control"
+                            name="password"
+                            id="password1"
+                            onChange={e => setPassword(e.target.value)}
+                            autoComplete="off" />
+                    </div>
+                    <div className="bt1">
+                    <input type="submit" value="Login" className="btn btn-primary" />
+                    </div> 
+                </form>
+                <div className="bt1">
+                <NavLink exact to="/register"> <span id="r">Register</span></NavLink></div>
+            </div> 
+            
+            </div>
+        <Footer/>    
+        </>
+        
     );
 }
  

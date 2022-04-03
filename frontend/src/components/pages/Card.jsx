@@ -1,0 +1,33 @@
+import React from "react";
+import {NavLink,useNavigate} from "react-router-dom";
+// import Payment from '../Payments/Payment';
+import './Card.css'
+
+const Card = (props) => {
+    const navigate=useNavigate();
+    const CheckOut=()=>{
+        navigate(`/checkout/${props.productName}/${props.productMadeBy}/${props.productPrice}`);
+    }
+    return (
+        <>
+        <div className="back" >   
+            <div className="cardMain"  style={{ width: "18rem", margin:"2rem" }}>
+                <img src={props.productImage} className="card-img-top" alt="..." style={{height:"350px"}} />
+                <div className="card-body">
+                    <h5 className="card-title">{props.productName}</h5>
+                    <p className="card-text description" id="xyz">{props.productDescription}</p>
+                    <p className="card-text price" id="456">{props.productPrice}</p>
+                    <a href={props.productMadeBy} className="card-text madeby" id="789">{props.productMadeBy}</a> 
+                    <button onClick={CheckOut}>Buy Now</button>                       
+                    {/* <NavLink  to='/payment' className="payment"  >{<Payment />}</NavLink> */}
+                    
+                </div>
+            </div>
+        </div>
+            
+        
+        </>
+    )
+}
+
+export default Card;

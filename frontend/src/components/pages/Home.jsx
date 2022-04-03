@@ -1,28 +1,58 @@
 import React, { useEffect, useContext } from 'react';
-import { useHistory, Link } from 'react-router-dom';
+import { useNavigate,NavLink} from 'react-router-dom';
 import UserContext from '../../context/userContext';
+import './Home.css';
+import image from '../Images/image.png';
+import ww2 from '../Images/home1.png';
+import ww3 from '../Images/home2.png';
+import Footer from './Footer/Footer';
 
-function Home () {
+const Home = () => {
     const {userData} = useContext(UserContext);
-    const history = useHistory();
+    const history = useNavigate();
 
     useEffect(() => {
         if(!userData.user)
-            history.push("/login");
+            history("/");
 
     }, []);
     return (
-        <div>
-            {userData.user ? (
+            <>
+        <div className="home">
+             {/*{userData.user ? (
                 <h1>Welcome {userData.user.displayName}</h1>
             ) : (
                 <>
                     <h2>You are not logged in</h2>
-                    <Link to="/login">Login</Link>
                 </>
-            )}
+            )} */}
+                <div className="homeImg">
+                    <img src={image} alt="img" />
+                </div>
+                <div className="right">
+                <h1>Welcome to SakSham</h1>
+                <div id="carouselExampleControls" class="carousel slide carouselMain" data-ride="carousel">
+           
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carouselImg">
+                            <img class="d-block w-100" src={ww2} alt="First slide" />
+                        </div>
+                        <div class="carousel-item carouselImg">
+                            <img class="d-block w-100" src={ww3} alt="Second slide" />
+                        </div>
+                        <div class="carousel-item carouselImg">
+                            <img class="d-block w-100" src="http://www.mysticindiatour.com/wp-content/uploads/2013/12/Maharashtra-Arts-Crafts.jpg" alt="Third slide" />
+                        </div>
+                    </div>
+                </div>
+                </div>
         </div>
-    );
+        <Footer/>
+        </>
+        
+
+    )
+
 }
  
 export default Home;

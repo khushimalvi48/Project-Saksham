@@ -1,0 +1,51 @@
+.join-back {
+    background-image: linear-gradient(to bottom right, #FACE7F, #FCF0C8);
+    padding-left: 340px;
+    padding-right: 340px;
+    padding-top: 110px;
+
+}
+
+.head{
+    text-align: center;
+}
+
+.form-group {
+    padding-top: 7px;
+
+
+}
+
+.form-control {
+    margin-right: 70px;
+
+}
+
+.join {
+    border-radius: 50px;
+    position: relative;
+    bottom: 2.5rem;
+    background-color: #FACE7F;
+    border-radius: 30px;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    box-shadow: 3px 3px;
+}
+
+.join-btn {
+    background-color: #630a10;
+    color: azure;
+    border-radius: 6px;
+    height: 2.5rem;
+    width: 5rem;
+    position: relative;
+    left:19rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.join-btn:hover {
+    background: #fb0808;
+}

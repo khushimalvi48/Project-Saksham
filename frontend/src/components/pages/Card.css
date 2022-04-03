@@ -1,0 +1,89 @@
+.card {
+    background-color: #FCF0C8;
+    padding-top: 50px;
+
+
+}
+
+.inner {
+    margin-top: 1rem;
+
+}
+
+.back {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.description {
+    text-align: left;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 12rem;
+    width: 18rem;
+    padding-right: 2rem;
+}
+
+.cardMain {
+    border: 2px solid red;
+    width: 22rem !important;
+    height: 45rem;
+
+    background-color: #FACE7F;
+    border-radius: 40px;
+    border-color: black;
+
+}
+
+.cardMain:hover {
+    background-color: rgb(245, 169, 70);
+}
+
+.card-img-top {
+    border-radius: 40px;
+    border-color: #080000;
+}
+
+
+.pay {
+    background-color: #911F27;
+    padding-right: px;
+    color: azure;
+    border-radius: 5px;
+    background: #911f27;
+    color: #fff;
+    box-shadow: 50%;
+
+
+}
+
+
+.pay:hover {
+    background: #fb0808;
+}
+
+.container-fluid {
+    text-align: center;
+
+
+}
+
+h2 {
+    padding-top: 15px;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.card-text {
+    text-align: left;
+
+}
+
+#xyz {
+    text-align: left;
+
+
+
+}

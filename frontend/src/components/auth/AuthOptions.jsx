@@ -1,29 +1,92 @@
-import React, { useContext } from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useContext,useState } from 'react';
+import { useNavigate,NavLink} from 'react-router-dom';
 import UserContext from "../../context/userContext";
 
-function AuthOptions () {
-    const { userData, setUserData } = useContext(UserContext);
-    const history = useHistory();
+function loadScript(src) {
+	return new Promise((resolve) => {
+		const script = document.createElement('script')
+        script.src = src;
+		script.onload = () => {
+            resolve(true);
+		}
+		script.onerror = () => {
+            resolve(false);
+		}
+        document.body.appendChild(script);
+	})
+}
 
-    const register = () => history.push("/register");
-    const login = () => history.push("/login");
+const __DEV__ = document.domain === 'localhost';
+
+function AuthOptions() {
+    const [name, setName] = useState('Khushi');
+
+	async function displayRazorpay() {
+        const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js');
+
+		if (!res) {
+            alert('Razorpay SDK failed to load. Are you online?');
+            return
+		}
+
+        const data = await fetch('http://localhost:5000/donate', { method: 'POST' }).then((t) =>
+            t.json()
+		)
+
+        console.log(data);
+
+		const options = {
+			key: __DEV__ ? 'rzp_test_13xvVnEfV5HPoJ' : 'PRODUCTION_KEY',
+			amount: data.amount.toString(),
+            currency: data.currency,
+			order_id: data.id,
+			name: 'Payment',
+			description: 'Be a helping hand',
+			image: 'http://localhost:5000/imagedonate',
+            handler: function () {
+                alert("Payment Done");
+				//alert(response.razorpay_payment_id)
+				//alert(response.razorpay_order_id)
+				//alert(response.razorpay_signature)
+			},
+			prefill: {
+				name,
+				email: 'khushi@gmail.com',
+				phone_number: '8585948594'
+			}
+		}
+		const paymentObject = new window.Razorpay(options)
+        paymentObject.open();
+	}
+    const { userData, setUserData } = useContext(UserContext);
+    const history = useNavigate();
+
+    const register = () => history("/register");
+    const login = () => history("/login");
     const logout = () => {
         setUserData({
             token: undefined,
             user: undefined
         })
-        localStorage.setItem("auth-token","");
+        localStorage.setItem("auth-token", "");
+        history('/');
     };
 
     return (
         <nav className="auth-options">
             {userData.user ? (
+                <> 
+                    <NavLink to='/explore'>Explore</NavLink>
+            <button className="btn btn-primary mr-2" onClick={displayRazorpay}>Donate</button>
+                    
                 <button className="btn btn-primary mr-2" onClick={logout}>Logout</button>
-            ) : (
-                <>
-                <button className="btn btn-primary mr-2" onClick={register}>Sign Up</button>
-                <button className="btn btn-primary mr-2" onClick={login}>Login</button>
+            </>
+                    ) : (
+                    <>      
+            <button className="btn btn-primary mr-2" onClick={displayRazorpay}>Donate</button>
+                     
+                    <button className="btn btn-primary mr-2" onClick={register}>Sign Up</button>
+                    <button className="btn btn-primary mr-2" onClick={login}>Login</button>         
                 </>
             )}
         </nav>

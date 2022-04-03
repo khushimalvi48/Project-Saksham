@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lobster&family=Merriweather&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.navbar{
+    background-color: #911F27 !important;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Lobster', cursive;
+    color: white !important;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    padding: auto;
+}
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    font-size: 1.2rem;
+    color: beige ;
+}
+
+.navbar .navbar-brand .logo img {
+    height: 3.5rem;
+    width: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,51 @@
+.home {
+    display: flex;
+    width: 100vw;
+    height: 120vh;
+    background-color: #FCF0C8;
+    background-image: linear-gradient(to bottom right, #FACE7F, #FCF0C8);
+}
+
+.home .homeImg img {
+    width: 25rem;
+}
+
+.carouselMain {
+    margin: auto;
+    margin-left: 1rem;
+    padding: 2rem;
+    width: 100vh;
+    height: 65vh;
+    box-shadow: 2px 6px 3px rgba(0, 0, 0, 0.144);
+    border-radius: 2rem;
+
+}
+
+.home .right {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+    margin-left: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .right h1 {
+    font-family: 'Patua One', cursive;
+    margin-top: 4rem;
+    font-size: 3.2rem;
+    background: #CF0404;
+    background: -webkit-linear-gradient(to right, #CF0404 0%, #C9CF1D 100%);
+    background: -moz-linear-gradient(to right, #CF0404 0%, #C9CF1D 100%);
+    background: linear-gradient(to right, #CF0404 0%, #C9CF1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.carouselImg img {
+    width: 60vw;
+    height: 55vh;
+    border-radius: 2rem;
+}

@@ -1,0 +1,65 @@
+.heading-top {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    height: 6rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+.heading-top .h1 {
+    position: relative;
+    font-size: 2vw;
+    left: 30rem;
+    line-height: 6vw;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 900;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGH6GpTkNkDwx9kKrzH8jGnEAJf9nZXgoKA&usqp=CAU");
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.08);
+    animation: zoomout 5s ease 500ms forwards;
+}
+
+@keyframes zoomout {
+    from {
+        background-size: 40%;
+    }
+
+    to {
+        background-size: 10%;
+    }
+}
+.button{
+    position: relative;
+    left: 53rem;
+    padding-top: 2rem;
+}
+.but {
+    background-color: #911F27;
+    position: fixed;
+    /* Green */
+    border: black;
+    border-radius: 3px;
+    box-shadow: rgba(220, 220, 235, 0.25) 0px 30px 60px -12px inset,
+    rgba(244, 235, 235, 0.3) 0px 18px 36px -18px inset;
+    border-width: 45px;
+    color: Black;
+    padding: 15px 32px;
+    text-align: right;
+    text-size-adjust: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* transform: rotate(90deg); */
+}
+
+.but:hover {
+    background-color: #FACE7F;
+}
+
+.main_Card{
+    margin: 1rem 5rem;
+    
+}
