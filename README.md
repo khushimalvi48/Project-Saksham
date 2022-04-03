@@ -49,6 +49,9 @@ Back End:-
   }
 ## Flow Chart
 ![](flow.png)
+
+## Web Flow
+![](whimcool.png)
 ## To run Project
 
 Server:- 
