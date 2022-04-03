@@ -45,8 +45,7 @@ Back End:-
     "mongoose": "^6.2.8",
     "morgan": "^1.10.0",
     "razorpay": "^2.8.1",
-    "shortid": "^2.2.16"
-  }
+    "shortid": "^2.2.16"}
 ## Flow Chart
 ![](flow.png)
 
