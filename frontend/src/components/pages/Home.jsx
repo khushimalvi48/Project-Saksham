@@ -3,6 +3,7 @@ import { useNavigate,NavLink} from 'react-router-dom';
 import UserContext from '../../context/userContext';
 import './Home.css';
 import image from '../Images/image.png';
+import image1 from '../Images/image1.png';
 import ww2 from '../Images/home1.png';
 import ww3 from '../Images/home2.png';
 import Footer from './Footer/Footer';
@@ -30,7 +31,7 @@ const Home = () => {
                     <img src={image} alt="img" />
                 </div>
                 <div className="right">
-                <h1>Welcome to SakSham</h1>
+                <h1>Welcome to saksham</h1>
                 <div id="carouselExampleControls" class="carousel slide carouselMain" data-ride="carousel">
            
                     <div class="carousel-inner">

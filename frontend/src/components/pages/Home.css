@@ -1,7 +1,8 @@
 .home {
     display: flex;
-    width: 100vw;
     height: 120vh;
+    position: relative;
+    right: 0;
     background-color: #FCF0C8;
     background-image: linear-gradient(to bottom right, #FACE7F, #FCF0C8);
 }
@@ -9,6 +10,7 @@
 .home .homeImg img {
     width: 25rem;
 }
+
 
 .carouselMain {
     margin: auto;
@@ -26,22 +28,21 @@
     flex-direction: column;
     margin: auto;
     margin-top: 0;
-    margin-left: 4rem;
     align-items: center;
     justify-content: center;
 }
 
 .home .right h1 {
     font-family: 'Patua One', cursive;
-    margin-top: 4rem;
-    font-size: 3.2rem;
-    background: #CF0404;
-    background: -webkit-linear-gradient(to right, #CF0404 0%, #C9CF1D 100%);
-    background: -moz-linear-gradient(to right, #CF0404 0%, #C9CF1D 100%);
-    background: linear-gradient(to right, #CF0404 0%, #C9CF1D 100%);
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGH6GpTkNkDwx9kKrzH8jGnEAJf9nZXgoKA&usqp=CAU");
+    background-size: 40%;
+    background-position: 50% 50%;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    color: rgba(0, 0, 0, 0.08);
+    animation: zoomout 5s ease 500ms forwards;
 }
 
 .carouselImg img {
