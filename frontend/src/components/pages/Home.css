@@ -24,7 +24,7 @@
     margin-left: 1rem;
     padding: 2rem;
     width: 100vh;
-    height: 60vh;
+    height: 65vh;
     background-color: #face7f;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
         rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -44,6 +44,7 @@
 .home .right .heading {
     position: relative;
     font-size: 3rem;
+    margin-top: 2rem;
     margin-bottom: 2.5rem;
     font-weight: 900;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGH6GpTkNkDwx9kKrzH8jGnEAJf9nZXgoKA&usqp=CAU");

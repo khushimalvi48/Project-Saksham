@@ -29,7 +29,8 @@
     border-radius: 30px;
     margin-left: 22rem;
     margin-bottom: 12rem;
-    box-shadow: 2px 3px rgb(135, 131, 125);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .RegisterMain form{

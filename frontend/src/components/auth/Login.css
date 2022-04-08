@@ -34,9 +34,10 @@
     background-color: #face7f;
     margin: 2rem 27rem;
     border-radius: 30px;
-    box-shadow: 3px 3px rgb(182, 166, 166);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
     height: 29rem;
-    width: 38rem;
+    width: 40rem;
 
 }
 

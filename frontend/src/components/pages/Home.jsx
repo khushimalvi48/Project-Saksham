@@ -24,7 +24,7 @@ const Home = () => {
                         <img src={image} alt="img" />
                     </div>
                     <div className="right">
-                        <h1 className='heading'>Welcome to saksham</h1>
+                        <h1 className='heading'>Welcome to Saksham</h1>
                         <div id="carouselExampleControls" class="carousel slide carouselMain" data-ride="carousel">
 
                             <div class="carousel-inner">
