@@ -1,0 +1,48 @@
+.productMain {
+    display: flex;
+
+}
+
+.productMain p {
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+
+.prd {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+
+.prd img {
+    width: 24rem;
+    height: 20rem;
+    border-radius: 50px;
+    border-color: black;
+    box-shadow: 5px 5px 5px;
+    margin-right: 5rem;
+}
+
+.prd h4 {
+    padding: 1rem 2rem 0rem 8rem;
+
+}
+
+.ino img {
+    width: 12rem;
+    height: 7rem;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+
+
+
+}
+
+.ab {
+    padding-left: 5rem;
+    margin-bottom: 5rem;
+}

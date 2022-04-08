@@ -1,12 +1,12 @@
 import React from "react";
-import {NavLink,useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 // import Payment from '../Payments/Payment';
 import './Card.css'
 
 const Card = (props) => {
     const navigate=useNavigate();
     const CheckOut=()=>{
-        navigate(`/checkout/${props.productName}/${props.productMadeBy}/${props.productPrice}`);
+        navigate(`/checkout/${props.productImage}/${props.productName}/${props.productMadeBy}/${props.productPrice}`);
     }
     return (
         <>

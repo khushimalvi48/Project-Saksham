@@ -11,9 +11,10 @@ import './App.css';
 import Community from './components/pages/Community/Community';
 import Join from './components/pages/Join/Join';
 import Product from './components/pages/Product';
-import Checkout from './components/pages/Checkout/Checkout';
+import Checkout from './components/pages/Checkout';
 import Payment from "./components/Payments/Payment";
 import Donate from './components/Payments/Donate';
+import PersonDetail from './components/pages/Community/PersonDetail';
 
 function App() {
   const [ userData, setUserData] = useState({
@@ -57,8 +58,8 @@ function App() {
           <Route path="/join" element={<Join/>} />
           <Route exact path='/explore' element={<Product />} />
           <Route exact path='/donate' element={<Donate />} />
-          
-<Route path='/checkout/:pname/:psname/:price' element={<Checkout/>}/>
+          <Route path='/persondetail/:name/:heading/:para1/:para2/:phone' element={<PersonDetail/>}/>
+<Route path='/checkout/pages/Images/:image/:pname/:psname/:price' element={<Checkout/>}/>
           
         </Routes>
         </UserContext.Provider>

@@ -2,9 +2,9 @@ import React, { useEffect, useContext } from 'react';
 import { useNavigate,NavLink} from 'react-router-dom';
 import UserContext from '../../context/userContext';
 import './Home.css';
-import image from '../Images/image.png';
-import ww2 from '../Images/home1.png';
-import ww3 from '../Images/home2.png';
+import image from '../pages/Images/image.png';
+import ww2 from '../pages/Images/home1.png';
+import ww3 from '../pages/Images/home2.png';
 import Footer from './Footer/Footer';
 
 const Home = () => {

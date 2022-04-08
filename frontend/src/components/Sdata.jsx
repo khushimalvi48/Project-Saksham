@@ -1,7 +1,7 @@
 const Sdata = [
     {
         id: 1,
-        productImage:"https://www.utsavpedia.com/wp-content/uploads/2013/10/1612-large.jpg",
+        productImage:'./pages/Images/1.png',
         productName:"Terracotta Jewelry",
         productDescription:"Terracotta literally means baked earth and is made from natural clay, giving it a reddish-brown color.",
         productPrice: "300 Rs",

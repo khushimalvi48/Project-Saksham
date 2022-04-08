@@ -4,6 +4,7 @@ import Card from './Card';
 import Sdata from '../Sdata';
 import './Card.css';
 
+
 const Explore = () => {
     return (
         <>
@@ -11,8 +12,8 @@ const Explore = () => {
             <div className="container-fluid card">
                 <h2>Our Exclusive Products</h2>
                 
-                <div class="row inner">
-                    <div class="col">
+                <div className="row inner">
+                    <div className="col">
                         {Sdata.map((val) => {
                             return (
                                 <Card

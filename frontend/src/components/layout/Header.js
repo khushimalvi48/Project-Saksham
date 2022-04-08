@@ -1,7 +1,7 @@
 import React, { Component,useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import AuthOptions from '../auth/AuthOptions';
-import logo from '../Images/logo.png';
+import logo from '../pages/Images/logo.png';
 import './Header.css';
 
 
