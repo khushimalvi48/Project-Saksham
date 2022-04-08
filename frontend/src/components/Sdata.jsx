@@ -1,9 +1,10 @@
 const Sdata = [
     {
         id: 1,
-        productImage:'./pages/Images/1.png',
+        productImage:'https://www.utsavpedia.com/wp-content/uploads/2013/10/1612-large.jpg',
         productName:"Terracotta Jewelry",
-        productDescription:"Terracotta literally means baked earth and is made from natural clay, giving it a reddish-brown color.",
+        productDescription:`Terracotta literally means baked earth and is made from natural clay giving it a reddish-brown color.Terracotta jewellery is one of the oldest forms of jewellery in the world. Terracotta is an Italian word that means “cooked earth”. Its history dates back to the Harappa
+and Mohenjodaro civilization. There have been several ornaments like ear studs, necklaces found by archaeologists.`,
         productPrice: "300 Rs",
         madeBy:"Anita Shah"
     },
@@ -19,7 +20,7 @@ const Sdata = [
         id: 3,
         productImage:"https://www.gitagged.com/wp-content/uploads/2018/09/GiTAGGED-Peacock-Tri-Metal-Thanjavur-Art-Plate-Online-1-300x300.png",                       
         productName:"Thanjavur Art Plates",
-        productDescription:"The Art plate is a coordinated effort of 3 Experts, 1) Preparation of Brass plate by a Metal worker, Embossing Motifs on Copper & Silver by Jewel maker, Encrusting sheet onto the brass plate by a Diamond setter.",
+        productDescription:"The Art plate is a coordinated effort of 3 Experts, Preparation of Brass plate by a Metal worker, Embossing Motifs on Copper & Silver by Jewel maker, Encrusting sheet onto the brass plate by a Diamond setter.",
         productPrice: "1999 Rs",
         madeBy:"Rishita Barkhade "
     },
@@ -51,8 +52,9 @@ const Sdata = [
     {
         id:7,
         productImage:"https://image.shutterstock.com/image-photo/kolkata-west-bengal-india-november-260nw-240095743.jpg",                       
-        productName:"Shirt",
-        productDescription:"",
+        productName:"Paintings",
+        productDescription: "As you traverse the craft-dotted landscape that enriches the country, you’ll witness a grand spectacle of vivid colours and magnificent designs. Rajasthan, for instance, has nurtured and celebrated centuries-old crafts within its folds; Kathputli is one such craft.",
+        
         productPrice: "1900 Rs",
         madeBy:"Anita Amin"
     }

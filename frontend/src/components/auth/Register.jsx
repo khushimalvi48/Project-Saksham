@@ -5,7 +5,6 @@ import UserContext from "../../context/userContext";
 import ErrorNotice from "../../components/misc/ErrorNotice";
 import './Register.css';
 import mandala from './mandala.png';
-import Footer from '../pages/Footer/Footer';
 
 function Register () {
 

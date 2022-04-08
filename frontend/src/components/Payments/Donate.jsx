@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function loadScript(src) {
 	return new Promise((resolve) => {
@@ -17,6 +19,8 @@ function loadScript(src) {
 const __DEV__ = document.domain === 'localhost'
 
 function Donate() {
+	const navigate = useNavigate();
+
     const [name, setName] = useState('Khushi');
 
 	async function displayRazorpay() {
@@ -42,15 +46,16 @@ function Donate() {
 			description: 'Be a helping hand',
 			image: 'http://localhost:5000/imagedonate',
             handler: function () {
-                alert("Payment Done");
+				alert("Payment Done");
+				navigate('/');
 				//alert(response.razorpay_payment_id)
 				//alert(response.razorpay_order_id)
 				//alert(response.razorpay_signature)
 			},
 			prefill: {
 				name,
-				email: 'khushi@gmail.com',
-				phone_number: '8585948594'
+				email: 'bansi@gmail.com',
+				phone: '8585948594'
 			}
 		}
 		const paymentObject = new window.Razorpay(options)

@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Josefin+Sans:wght@100;200;300;400;500;600&family=Lobster+Two&family=Lora:ital,wght@1,400;1,500;1,600&family=Varela+Round&display=swap');
+
 .card {
     background-color: #FCF0C8;
     padding-top: 50px;
-
-
+   
 }
 
 .inner {
     margin-top: 1rem;
-
 }
 
 .Cardback {
@@ -43,6 +43,7 @@
     box-shadow: 2px 2px rgba(168, 160, 160, 0.604);
     background-color: #FACE7F;
     border-radius: 40px;
+    box-shadow: 5px 5px 5px;
 
 }
 
@@ -95,14 +96,10 @@ h2 {
     text-align: left;
 }
 
-.card-text {
-    text-align: left;
 
-}
 
 #xyz {
-    text-align: left;
-
-
-
+    position: relative;
+    top:1rem;
+    left:3rem;
 }

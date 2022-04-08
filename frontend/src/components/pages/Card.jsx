@@ -6,7 +6,7 @@ import './Card.css'
 const Card = (props) => {
     const navigate=useNavigate();
     const CheckOut=()=>{
-        navigate(`/checkout/${props.productImage}/${props.productName}/${props.productMadeBy}/${props.productPrice}`);
+        navigate(`/checkout/${props.productName}/${props.productMadeBy}/${props.productPrice}`);
     }
     return (
         <>

@@ -7,9 +7,10 @@
     position: relative;
     top:1.5rem;
 }
+
 .RegisterMain img {
    position: relative;
-   top: 10rem;
+   top: 8.5rem;
    left: 2rem;
 
 }
@@ -23,10 +24,11 @@
 }
 .RegisterMain {
     display: flex;
+    margin-top:3rem;
     background-color: #face7f;
     border-radius: 30px;
     margin-left: 22rem;
-    margin-bottom: 2rem;
+    margin-bottom: 12rem;
     box-shadow: 2px 3px rgb(135, 131, 125);
 }
 
@@ -45,6 +47,7 @@
     color: white !important;
     border: #face7f;
     margin-top: 1rem;
+    position: relative;
 }
 
 .btn:hover {
@@ -53,6 +56,6 @@
 
 }
 .RegisterMain img {
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 12rem;
 }

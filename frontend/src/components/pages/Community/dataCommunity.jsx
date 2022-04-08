@@ -1,7 +1,7 @@
 const communityMemebers = [
         {
             id:1,
-            image : "http://community.fansshare.com/pic136/w/demographics-of-laos/300/22076_demographics_of_india_demographics_of_asia_eye_contact_facial_expression_india_indian_people_old_age_person_rajasthani_people_women_in_india.jpg",
+            image:"https://t.ly/oNVr",
             name : "Madhu Shanti", 
             heading:"I am a Mithila Painter From Madhubani, Bihar, India and my speciality is Mithila Painting and I make made posters and mithila painted sarees for weddings and occasions.",
         para1: "I am 57 years old and a part of Saksham since 4 years.In Bihar Mithila painting posters are one of the major part of weddin occasions .My products are been sold outside india too. PrimeMiniter Narendra Modi himself has praised the maithili artculture and has encouraged many other ladies.",
@@ -74,7 +74,7 @@ const communityMemebers = [
             image : "https://files.globalgiving.org/pfil/11402/pict_featured_jumbo.jpg?t=1641216097000",
             name : "Nidhi Khanna", 
             heading:"I am from Ujjain, Madhya Pradesh and I like do craft work. Craft of any kind",
-            para1: "Batik Print is popular craft existent in Ujjain and many bed sheets, sarees, wall panels, portraits, dress materials, etc. contain the rich batik prints. At my age i want to inspire other women who want to work and earn by utilizing their talent ",
+            para1: "Batik Print is popular craft existent in Ujjain and many bed sheets, sarees, wall panels, portraits, dress materials, etc. contain the rich batik prints. At my age i want to inspire other women who want to work and earn by utilizing their talent.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium fuga reprehenderit, quidem blanditiis labore rem? ",
             para2:"Support of our customers have encouraged us to work on this mission to make Saksham an identity for all those art workers who have talents but havent got the platform to showcase it.It will be our heartiest request to share this website so that we can reach all art worker over india.",
             phone: "7883749392",
             products:{

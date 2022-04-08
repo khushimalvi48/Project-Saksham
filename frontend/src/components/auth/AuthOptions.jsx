@@ -76,7 +76,7 @@ function AuthOptions() {
         <nav className="auth-options">
             {userData.user ? (
                 <> 
-                <NavLink to='/explore'  style={{marginRight:"49rem", position:"relative",top:"0.2rem",color:"white", textDecoration:"none"}}>Explore</NavLink>
+                <NavLink to='/explore'  style={{marginRight:"50rem", position:"relative",top:"0.2rem",color:"white", textDecoration:"none"}}>Explore</NavLink>
                 <button className="btn btn-primary mr-2" onClick={displayRazorpay}>Donate</button>        
                 <button className="btn btn-primary mr-2" onClick={logout}>Logout</button>
             </>

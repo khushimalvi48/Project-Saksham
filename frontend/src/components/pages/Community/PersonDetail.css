@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Josefin+Sans:wght@100;200;300;400;500;600&family=Lobster+Two&family=Lora:ital,wght@1,400;1,500;1,600&family=Varela+Round&display=swap');
 .productMain {
     display: flex;
+    font-family: 'El Messiri',sans-serif;
+    font-weight: 700;
 
 }
-
+.para{
+    position: relative;
+    border-radius: 3rem;
+    top:3rem;
+    left: 2rem;
+    background-color: #FACE7F;
+    width: 60rem;
+    height: 17rem;
+    box-shadow: 5px 5px 5px;
+}
 .productMain p {
     margin-top: 3rem;
     margin-left: 6rem;
@@ -37,12 +49,10 @@
     margin-right: 2rem;
     border-radius: 15px;
     box-shadow: 5px 5px 5px;
-
-
-
 }
 
 .ab {
     padding-left: 5rem;
+    margin: 2rem;
     margin-bottom: 5rem;
 }

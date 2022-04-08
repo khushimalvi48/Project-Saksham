@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Josefin+Sans:wght@100;200;300;400;500;600&family=Lobster+Two&family=Lora:ital,wght@1,400;1,500;1,600&family=Varela+Round&display=swap');
 .img{
     padding-left: 2.5rem;
 }
@@ -14,14 +15,14 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
    height: 35rem;
-    font-style: italic;
     font-weight: bold;
     margin-right: 6rem;
     color: rgb(10, 10, 10);
+    font-family: 'El Messiri',sans-serif;
 }
 .mainCard{
      position: relative;
-    
+
 }
 .name{
     position: relative;
@@ -31,4 +32,19 @@
 .text
 {
     width: 25rem;
+}
+.btn11{
+    position: relative;
+    left:26rem;
+    background-color: rgba(145, 31, 39);
+    padding:0.2rem;
+    border-color: #FACE7F;
+    border-radius: 0.3rem;
+    bottom:3rem;
+} 
+
+.btn11:hover{
+   background-color:#fcbb43;
+   border-color:#FACE7F;
+
 }

@@ -10,7 +10,7 @@ const Community = () => {
             <div className="heading-top">
                 <h1 className="h1">Some of our Change Makers</h1>
                 <div className="button">
-                        <NavLink className="but" exact to="/join">Join Saksham</NavLink>
+                        <NavLink className="but10" exact to="/join">Join Saksham</NavLink>
                 </div>
             </div>
             <div className="row main_Card" style={{ width: "95rem" }}>
@@ -22,6 +22,7 @@ const Community = () => {
                                     name={val.name}
                                     heading={val.heading}
                                     para1={val.para1}
+                                    phone={val.phone}
                                         // productMadeBy={val.madeBy}
                                 />
                             )

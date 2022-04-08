@@ -1,4 +1,6 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function loadScript(src) {
 	return new Promise((resolve) => {
@@ -17,6 +19,7 @@ function loadScript(src) {
 const __DEV__ = document.domain === 'localhost'
 
 function Payment() {
+	const navigate = useNavigate();
     const [name, setName] = useState('Bansi')
 
 	async function displayRazorpay() {
@@ -42,7 +45,8 @@ function Payment() {
 			description: 'Please complete the payment',
 			image: 'http://localhost:5000/image',
             handler: function () {
-                alert("Payment Done");
+				alert("Payment Done");
+				navigate('/explore');
 				//alert(response.razorpay_payment_id)
 				//alert(response.razorpay_order_id)
 				//alert(response.razorpay_signature)
@@ -50,7 +54,7 @@ function Payment() {
 			prefill: {
 				name,
 				email: 'bansi@gmail.com',
-				phone_number: '9899999999'
+				phone:'9899999999'
 			}
 		}
 		const paymentObject = new window.Razorpay(options)
@@ -58,7 +62,7 @@ function Payment() {
 	}
     return (
         <div>
-            <button onClick={displayRazorpay}>Pay</button>
+			<button onClick={displayRazorpay} style={{color:"white"}}>Pay</button>
         </div>
     )
 }

@@ -56,10 +56,10 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path='/payment' element={<Payment/>}/>
           <Route path="/join" element={<Join/>} />
-          <Route exact path='/explore' element={<Product />} />
-          <Route exact path='/donate' element={<Donate />} />
-          <Route path='/persondetail/:name/:heading/:para1/:para2/:phone' element={<PersonDetail/>}/>
-<Route path='/checkout/pages/Images/:image/:pname/:psname/:price' element={<Checkout/>}/>
+          <Route exact="true" path='/explore' element={<Product />} />
+          <Route exact="true" path='/donate' element={<Donate />} />
+          <Route exact="true" path='/persondetail/:name/:heading/:para1/:phone' element={<PersonDetail/>}/>
+<Route path='/checkout/:pname/:psname/:price' element={<Checkout/>}/>
           
         </Routes>
         </UserContext.Provider>

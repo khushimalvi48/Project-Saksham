@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&family=Lobster+Two&family=Lora:ital,wght@1,400;1,500;1,600&family=Varela+Round&display=swap');
+body{
+    overflow-x: hidden;
+}
 .heading-top {
     padding-top: 1rem;
     padding-left: 2rem;
@@ -36,7 +40,7 @@
     left: 53rem;
     padding-top: 2rem;
 }
-.but {
+.but10 {
     background-color: #911F27;
     position: fixed;
     /* Green */
@@ -55,7 +59,7 @@
     /* transform: rotate(90deg); */
 }
 
-.but:hover {
+.but10:hover {
     background-color: #FACE7F;
      text-decoration: none !important;
 }

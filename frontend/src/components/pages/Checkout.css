@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Josefin+Sans:wght@100;200;300;400;500;600&family=Lobster+Two&family=Lora:ital,wght@1,400;1,500;1,600&family=Varela+Round&display=swap');
+
 .checkoutMain {
     background-color: #FCF0C8;
-   
+
 }
 
 .checkoutMain h1 {
@@ -17,30 +19,50 @@
 
 .checkoutLeft {
     padding: 1rem;
+    margin-left: 5rem;
+
 }
+
 
 .ItemDetail {
     padding: 2rem;
     text-align: center;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold;
 }
 
+.ItemDetail img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: 3rem;
+}
 
 .paymentMethod {
     padding: 4rem;
     width: 30rem;
-    height: 20rem;
-    margin: 1rem 2rem;
+    height: 18rem;
+    margin: 1rem 4rem;
     text-align: center;
     background-color: #f4be5a9d;
     border-radius: 2rem;
+    font-family: 'El Messiri', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
 }
 
 .paymentMethod h3 {
     margin-bottom: 3rem;
+    font-weight: bold;
+
 }
 
 .paymentMethod h5 {
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 .radiobutton {
@@ -52,9 +74,11 @@
     margin-left: 0.5rem;
     font-size: 1.3rem;
 }
-.checkoutInner{
+
+.checkoutInner {
     display: flex;
 }
+
 
 .shippingDetails {
     padding: 1.5rem;
@@ -62,11 +86,16 @@
     background-color: #f4be5a9d;
     border-radius: 2rem;
     margin-left: 3rem;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .shippingDetails h3 {
     text-align: center;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .shippingDetails form {
@@ -74,7 +103,7 @@
     padding-bottom: 0;
 }
 
-.shippingDetails form input{
+.shippingDetails form input {
     margin-bottom: 0.2rem;
 }
 
@@ -98,14 +127,18 @@
 }
 
 .checkoutRight .Summary {
-    margin-left: 2rem;
-    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
     width: 30rem;
     padding: 3rem;
     background-color: #f4be5a9d;
     border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .checkoutRight .Summary h3 {
     text-align: center;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold;
 }

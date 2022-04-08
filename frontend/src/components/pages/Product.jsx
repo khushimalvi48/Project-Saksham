@@ -1,9 +1,8 @@
 import React from "react";
 import Card from './Card';
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Sdata from '../Sdata';
 import './Card.css';
-
+import Footer from './Footer/Footer';
 
 const Explore = () => {
     return (
@@ -29,7 +28,7 @@ const Explore = () => {
                     </div>
                 </div>
             </div>
-
+        <Footer/>
         </>
     )
 }

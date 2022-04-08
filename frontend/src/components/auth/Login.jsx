@@ -62,10 +62,10 @@ function Login() {
                                 autoComplete="off" />
                         </div>
                         <div className="bt1">
-                            <input type="submit" value="Login" className="btn btn-primary" />
+                            <input type="submit" value="Login" className="btn2 btn-primary" />
                         </div>
-                            <p style={{display:"inline",margin: "1rem"}}>Dont have an account?</p>
-                            <NavLink exact to="/register"> <span id="r">Register</span></NavLink>
+                            <p style={{display:"inline",margin: "0.5rem"}}>Dont have an account?</p>
+                            <NavLink exact to="/register"> <span id="r" className="fw-bold text-body"><u>Register</u></span></NavLink>
                     </form>
 
                 </div>

@@ -11,7 +11,7 @@ const razorpay = new Razorpay({
 });
 
 router.get('/image', (req, res) => {
-    res.sendFile(path.join(__dirname, '../images/pot.png')); 
+    res.sendFile(path.join(__dirname, '../images/5.jpg'));
 });
 
 router.get('/imagedonate', (req, res) => {
@@ -44,11 +44,11 @@ router.post('/verification', (req, res) => {
 
 router.post('/payment',async (req, res) => {
     const payment_capture = 1;
-    const amount = 500;
+    const amount = 1000;
     
     const currency = 'INR';
     const options={
-        amount:(amount).toString(), currency, receipt:shortid.generate(), payment_capture
+        amount:(amount*100).toString(), currency, receipt:shortid.generate(), payment_capture
     };
     try
     {
