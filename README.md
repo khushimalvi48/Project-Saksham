@@ -3,6 +3,7 @@
 
 
 ## Video Link
+[Video](https://drive.google.com/file/d/17QWA_zgmWfxeNUZJTXy7jckv0HpLj7k7/view?usp=sharing)
 ## Presentation Link
 [Presentation](https://www.canva.com/design/DAE8FQVvHkI/NHEDmiY8N494DDVBTkX55A/edit?utm_content=DAE8FQVvHkI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ## Tech Stacks Used
@@ -14,6 +15,8 @@ Express Js
 Node Js
 
 MongoDB
+
+Bootstrap
 
 Payment Gateway-  Razorpay
 
