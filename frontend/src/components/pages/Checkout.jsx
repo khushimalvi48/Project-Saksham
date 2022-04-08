@@ -18,19 +18,14 @@ const Checkout = () => {
       <div className="checkoutMain">
         <h1>Complete Transaction</h1>
         <div className="checkoutInner">
+
           <div className="checkoutLeft">
-            <div className="paymentMethod">
-              <h2>Payment Methods</h2>
-              <h5>Please Select a payment method</h5>
-              <input className="radiobutton" type="radio" id="cod" name="pay_method" value="COD" />
-              <label className="radioLabel" for="cod">Cash On delivery</label>
-              <input className="radiobutton" type="radio" id="other" name="pay_method" value="Other" />
-              <label className="radioLabel" for="other">UPI/Card</label>
-            </div>
             <div className="shippingDetails">
               <form>
                 <h2>Shipping Details</h2>
                 <div className="form-group">
+                <h3>Shipping Details</h3>
+                <div class="form-group">
                   <label for="name">Full Name</label>
                   <input type="text" className="form-control" id="name" placeholder="Enter your name" />
                 </div>
@@ -63,8 +58,8 @@ const Checkout = () => {
                   <input type="email" className="form-control" id="email" placeholder="Enter email" />
                 </div>
                 <button type="submit" className="btn btn-primary" onClick={Payment}>Pay Now</button>
+              </div>
               </form>
-            </div>
           </div>
           <div className="checkoutRight">
             <div className="Summary">
@@ -78,13 +73,19 @@ const Checkout = () => {
                 <h5>Price: {price}</h5>
               </div>
             </div>
-            <div className="adds">
-              <h1>Advertizement</h1>
-              </div>
+            <div className="paymentMethod">
+              <h3>Payment Methods</h3>
+              <h5>Please Select a payment method</h5>
+              <input className="radiobutton" type="radio" id="cod" name="pay_method" value="COD" />
+              <label className="radioLabel" for="cod">Cash On delivery</label>
+              <input className="radiobutton" type="radio" id="other" name="pay_method" value="Other" />
+              <label className="radioLabel" for="other">UPI/Card</label>
             </div>
         </div>
         </div>
-    )
-    
+      </div>
+      
+      </div>
+    )    
 }
 export default Checkout;

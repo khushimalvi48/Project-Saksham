@@ -2,6 +2,8 @@ import React, { useContext,useState } from 'react';
 import { useNavigate,NavLink} from 'react-router-dom';
 import UserContext from "../../context/userContext";
 
+
+
 function loadScript(src) {
 	return new Promise((resolve) => {
 		const script = document.createElement('script')
@@ -28,11 +30,9 @@ function AuthOptions() {
             alert('Razorpay SDK failed to load. Are you online?');
             return
 		}
-
         const data = await fetch('http://localhost:5000/donate', { method: 'POST' }).then((t) =>
             t.json()
 		)
-
         console.log(data);
 
 		const options = {
@@ -76,15 +76,13 @@ function AuthOptions() {
         <nav className="auth-options">
             {userData.user ? (
                 <> 
-                    <NavLink to='/explore'>Explore</NavLink>
-            <button className="btn btn-primary mr-2" onClick={displayRazorpay}>Donate</button>
-                    
+                <NavLink to='/explore'  style={{marginRight:"49rem", position:"relative",top:"0.2rem",color:"white", textDecoration:"none"}}>Explore</NavLink>
+                <button className="btn btn-primary mr-2" onClick={displayRazorpay}>Donate</button>        
                 <button className="btn btn-primary mr-2" onClick={logout}>Logout</button>
             </>
                     ) : (
                     <>      
-            <button className="btn btn-primary mr-2" onClick={displayRazorpay}>Donate</button>
-                     
+                    <button className="btn btn-primary mr-2" onClick={displayRazorpay}>Donate</button>                 
                     <button className="btn btn-primary mr-2" onClick={register}>Sign Up</button>
                     <button className="btn btn-primary mr-2" onClick={login}>Login</button>         
                 </>

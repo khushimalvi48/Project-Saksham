@@ -2,9 +2,10 @@ import React, { useEffect, useContext } from 'react';
 import { useNavigate,NavLink} from 'react-router-dom';
 import UserContext from '../../context/userContext';
 import './Home.css';
-import image from '../pages/Images/image.png';
-import ww2 from '../pages/Images/home1.png';
-import ww3 from '../pages/Images/home2.png';
+import image1 from './Images/image.png';
+// import image1 from './Images/image1.png';
+import ww2 from './Images/home1.png';
+import ww3 from './Images/home2.png';
 import Footer from './Footer/Footer';
 
 const Home = () => {
@@ -27,12 +28,12 @@ const Home = () => {
                 </>
             )} */}
                 <div className="homeImg">
-                    <img src={image} alt="img" />
+                    <img src={image1} alt="img" />
                 </div>
                 <div className="right">
-                <h1>Welcome to SakSham</h1>
+                <h1>Welcome to Saksham</h1>
                 <div id="carouselExampleControls" class="carousel slide carouselMain" data-ride="carousel">
-           
+
                     <div class="carousel-inner">
                         <div class="carousel-item active carouselImg">
                             <img class="d-block w-100" src={ww2} alt="First slide" />
@@ -49,10 +50,10 @@ const Home = () => {
         </div>
         <Footer/>
         </>
-        
+
 
     )
 
 }
- 
+
 export default Home;

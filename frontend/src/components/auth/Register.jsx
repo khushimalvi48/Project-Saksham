@@ -42,27 +42,27 @@ function Register () {
     return ( 
         <>
             <div className="Register">
-             <img src={mandala} alt="img"/>
               <div className="RegisterForm">
                 <div className="RegisterMain">
-                        <h2 className="text-uppercase text-center mb-5 reg">Create an account</h2>
+             <img src={mandala} alt="img"/>
                         {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
                   <form onSubmit={submit}>
+                       <h2 className="text-uppercase text-center mb-5 reg">Create an account</h2>
                     <div className="form-outline mb-2">
-                      <input type="text" id="display-name" name="name"  className="form-control inputField" onChange={e => setDisplayName(e.target.value)}/>
                       <label className="form-label" for="form3Example1cg" style={{marginLeft: '0px'}}>Your Name</label>
+                      <input type="text" id="display-name" name="name"  className="form-control inputField" onChange={e => setDisplayName(e.target.value)}/>
                     <div className="form-notch"><div className="form-notch-leading" style={{width : '9px'}}></div><div className="form-notch-middle" style={{width : '71.2px'}}></div><div className="form-notch-trailing"></div></div></div>
                     <div className="form-outline mb-2">
-                      <input type="email" id="email" name="email" className="form-control inputField" onChange={e => setEmail(e.target.value)}/>
                       <label className="form-label" for="form3Example3cg" style={{marginLeft: '0px'}}>Your Email</label>
+                      <input type="email" id="email" name="email" className="form-control inputField" onChange={e => setEmail(e.target.value)}/>
                     <div className="form-notch"><div className="form-notch-leading" style={{width: '9px'}}></div><div className="form-notch-middle" style={{width : '68.8px'}}></div><div className="form-notch-trailing"></div></div></div>
                     <div className="form-outline mb-2">
-                      <input type="number" id="phone" name="phone"  className="form-control inputField" onChange={e => setPhone(e.target.value)}/>
                       <label className="form-label" for="form3Example4cdg" style={{marginLeft: '0px'}}>Phone Number</label>
+                      <input type="number" id="phone" name="phone"  className="form-control inputField" onChange={e => setPhone(e.target.value)}/>
                     <div className="form-notch"><div className="form-notch-leading" style={{width: '9px'}}></div><div className="form-notch-middle" style={{width : '134.4px'}}></div><div className="form-notch-trailing"></div></div></div>
                     <div className="form-outline mb-2">
-                      <input type="password" id="password" name="password" className="form-control inputField" onChange={e => setPassword(e.target.value)}/>
                       <label className="form-label" for="form3Example4cg" style={{marginLeft: '0px'}}>Password</label>
+                      <input type="password" id="password" name="password" className="form-control inputField" onChange={e => setPassword(e.target.value)}/>
                     <div className="form-notch"><div className="form-notch-leading" style={{width: '9px'}}></div><div className="form-notch-middle" style={{width : '64px'}}></div><div className="form-notch-trailing"></div></div></div>
                     <div className="d-flex justify-content-center">
                       <input type="submit" value="Register" className="btn btn-primary" />
@@ -72,8 +72,7 @@ function Register () {
                 </div>
               </div>
             </div>
-            
-          <Footer/>    
+              
         </>
         );
 }

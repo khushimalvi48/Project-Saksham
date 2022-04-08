@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { useNavigate ,NavLink} from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import axios from "axios";
 import UserContext from "../../context/userContext";
 import ErrorNotice from "../../components/misc/ErrorNotice";
@@ -7,7 +7,7 @@ import mandala from './mandala.png';
 import './Login.css';
 import Footer from '../pages/Footer/Footer';
 
-function Login () {
+function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [error, setError] = useState();
@@ -17,8 +17,8 @@ function Login () {
 
     const submit = async (e) => {
         e.preventDefault();
-        try{
-            const loginUser = {email, password};
+        try {
+            const loginUser = { email, password };
             const loginResponse = await axios.post("http://localhost:5000/users/login", loginUser);
             setUserData({
                 token: loginResponse.data.token,
@@ -26,55 +26,53 @@ function Login () {
             });
             localStorage.setItem("auth-token", loginResponse.data.token);
             history("/");
-        } catch(err) {
+        } catch (err) {
             err.response.data.msg && setError(err.response.data.msg)
         }
-        
+
     };
-    
+
     return (
         <>
-        <div className="login">
-        <img src={mandala} alt="img"/>
+            <div className="login">
                 <div className="left">
-                
-                <h1>Login</h1>
-                 {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
-                <form onSubmit={submit} >
-                    <div className="mb-3">
-                        <label htmlfor="exampleInputEmail1" className="form-label">Email address</label>
-                        <input type="email"
-                            className="form-control"
-                            name="email"
-                            id="email1"
-                            onChange={e => setEmail(e.target.value)}
-                            autoComplete="off"         
-                            placeholder="abc@gmail.com"
-                            aria-describedby="emailHelp" />
-                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div className="mb-3">
-                        <label htmlfor="exampleInputPassword1" className="form-label">Password</label>
-                        <input type="password"
-                            className="form-control"
-                            name="password"
-                            id="password1"
-                            onChange={e => setPassword(e.target.value)}
-                            autoComplete="off" />
-                    </div>
-                    <div className="bt1">
-                    <input type="submit" value="Login" className="btn btn-primary" />
-                    </div> 
-                </form>
-                <div className="bt1">
-                <NavLink exact to="/register"> <span id="r">Register</span></NavLink></div>
+                    <img src={mandala} alt="img" />
+                    {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
+                    <form onSubmit={submit} >
+                        <h1>Login</h1>
+                        <div className="mb-3">
+                            <label htmlfor="exampleInputEmail1" className="form-label">Email address</label>
+                            <input type="email"
+                                className="form-control"
+                                name="email"
+                                id="email1"
+                                onChange={e => setEmail(e.target.value)}
+                                autoComplete="off"
+                                placeholder="abc@gmail.com"
+                                aria-describedby="emailHelp" />
+                            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div className="mb-3">
+                            <label htmlfor="exampleInputPassword1" className="form-label">Password</label>
+                            <input type="password"
+                                className="form-control"
+                                name="password"
+                                id="password1"
+                                onChange={e => setPassword(e.target.value)}
+                                autoComplete="off" />
+                        </div>
+                        <div className="bt1">
+                            <input type="submit" value="Login" className="btn btn-primary" />
+                        </div>
+                            <p style={{display:"inline",margin: "1rem"}}>Dont have an account?</p>
+                            <NavLink exact to="/register"> <span id="r">Register</span></NavLink>
+                    </form>
+
+                </div>
+
             </div> 
-            
-            </div>
-        <Footer/>    
         </>
-        
     );
 }
- 
+
 export default Login;

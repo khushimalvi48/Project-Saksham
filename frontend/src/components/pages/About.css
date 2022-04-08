@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
-
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGH6GpTkNkDwx9kKrzH8jGnEAJf9nZXgoKA&usqp=CAU");
   background-size: 40%;
   background-position: 50% 50%;
@@ -34,6 +33,6 @@ body {
 
 }
 .clearfix img {
-  width: 30vw;
-  height: 60vh;
+  width: 23vw;
+  height: 40vh;
 }

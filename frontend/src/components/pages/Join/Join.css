@@ -1,5 +1,5 @@
 .join-back {
-    background-image: linear-gradient(to bottom right, #FACE7F, #FCF0C8);
+    background-color: #FCF0C8;
     padding-left: 340px;
     padding-right: 340px;
     padding-top: 110px;
@@ -31,9 +31,18 @@
     padding-right: 95px;
     padding-bottom: 15px;
     padding-top: 15px;
-    box-shadow: 3px 3px;
+    box-shadow: 3px 3px rgba(135, 129, 129, 0.571);
 }
 
+.join h2{
+    font-weight: 900;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGH6GpTkNkDwx9kKrzH8jGnEAJf9nZXgoKA&usqp=CAU");
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.08);
+    animation: zoomout 5s ease 500ms forwards;
+}
 .join-btn {
     background-color: #630a10;
     color: azure;
@@ -44,6 +53,7 @@
     left:19rem;
     text-align: center;
     justify-content: center;
+    border: none;
 }
 
 .join-btn:hover {
